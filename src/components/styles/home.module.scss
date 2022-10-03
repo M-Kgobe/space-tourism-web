@@ -1,0 +1,62 @@
+@import "../../mixin.scss";
+
+.homeMain {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-around;
+	padding-bottom: 8.2rem;
+	min-height: 100vh;
+	background: url(../../assets/backgrounds/background-home-desktop.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.hero {
+	display: flex;
+	flex-direction: column;
+	width: 28rem;
+
+	.header {
+		font-family: "Barlow Condensed";
+		font-weight: 400;
+		font-size: 1.75rem;
+		line-height: 2.1rem;
+		letter-spacing: 4.7px;
+		text-transform: uppercase;
+		color: $lightGrayishBlue;
+
+		.space {
+			font-family: "Bellefair";
+			font-weight: 400;
+			font-size: 9.4rem;
+			line-height: 10.75rem;
+			color: $white;
+		}
+	}
+
+	p {
+		font-family: "Barlow";
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 2rem;
+		color: $lightGrayishBlue;
+	}
+}
+.explore{
+	width: 17rem;
+	height: 17rem;
+
+	p{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: $white;
+		color: $darkBlue;
+		height: 100%;
+		border-radius: 50%;
+		font-size: 2rem;
+		font-family: "Bellefair";
+		line-height: 2.3rem;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+	}
+}

@@ -1,0 +1,88 @@
+@import "./mixin.scss";
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	height: 96px;
+	position: absolute;
+	top: 40px;
+	padding-left: 55px;
+	background-color: transparent;
+	color: $lightGrayishBlue;
+
+	.logo {
+		width: 48px;
+		height: 48px;
+	}
+
+	hr {
+		position: relative;
+		width: 29.5rem;
+		z-index: 10;
+		background-color: $lightGrayishBlue;
+		height: 1px;
+		border: none;
+		left: 5rem;
+		opacity: 0.25;
+	}
+
+	.navBar {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 51.9rem;
+		height: 100%;
+		background-color: $transWhite;
+		backdrop-filter: blur(40.7742px);
+
+		.navLinks {
+			display: flex;
+			list-style-type: none;
+			justify-content: space-around;
+			width: 33.9rem;
+
+			li {
+				position: relative;
+
+				a {
+					text-transform: uppercase;
+					transition: all 500ms linear;
+					font-family: "Barlow Condensed";
+					font-style: normal;
+					font-weight: 400;
+					font-size: 16px;
+					line-height: 19px;
+					letter-spacing: 2.7px;
+
+					.linkNum {
+						font-weight: 700;
+					}
+				}
+
+				a:hover {
+					color: $white;
+				}
+
+				a::after {
+					content: "";
+					position: absolute;
+					bottom: -100%;
+					left: 0;
+					width: 100%;
+					height: 2px;
+					background-color: $white;
+					scale: 0;
+					transition: all 500ms linear;
+					translate: 0 0;
+					transform-origin: top;
+				}
+				a:hover::after {
+					translate: 0 16px;
+					scale: 1;
+				}
+			}
+		}
+	}
+}

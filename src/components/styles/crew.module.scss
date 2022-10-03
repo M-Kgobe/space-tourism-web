@@ -1,0 +1,11 @@
+@import '../../mixin.scss';
+.crew {
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-end;
+	min-height: 100vh;
+	padding-bottom: 5rem;
+	background: url(../../assets/backgrounds/background-crew-desktop.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}

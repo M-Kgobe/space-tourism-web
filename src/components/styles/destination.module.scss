@@ -1,0 +1,129 @@
+@import "../../mixin.scss";
+.destination {
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-end;
+	min-height: 100vh;
+	padding-bottom: 5rem;
+	background: url(../../assets/backgrounds/background-destination-desktop.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.chosenDest {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	height: 36rem;
+	gap: 50px;
+
+	h3 {
+		font-family: "Barlow Condensed";
+		font-size: 1.74rem;
+		line-height: 2.1rem;
+		font-weight: 400;
+		letter-spacing: 4.7px;
+		text-transform: uppercase;
+		position: relative;
+		left: -3rem;
+		color: $white;
+
+		span {
+			color: $white;
+			mix-blend-mode: normal;
+			opacity: 0.25;
+			font-weight: 700;
+		}
+	}
+	div {
+		width: 23rem;
+		height: 23rem;
+
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+.pickDest {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+	width: 27.8rem;
+	height: 24rem;
+
+	ul {
+		display: flex;
+		justify-content: space-around;
+		list-style-type: none;
+
+		li {
+			font-family: "Barlow Condensed";
+			font-style: normal;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 19px;
+			letter-spacing: 2.7px;
+			text-transform: uppercase;
+			transition: all 300ms linear;
+			cursor: pointer;
+			position: relative;
+
+			&:hover {
+				color: $lightGrayishBlue;
+			}
+		}
+		li:after {
+			content: "";
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			height: 2px;
+			background-color: $white;
+			border: none;
+			transition: all 300ms linear;
+			transform-origin: left;
+			scale: 0;
+		}
+		li:hover::after {
+			background-color: $lightGrayishBlue;
+			scale: 1;
+		}
+	}
+	h2 {
+		font-family: "Bellefair";
+		font-weight: 400;
+		font-size: 6.25rem;
+		line-height: 7.2rem;
+		text-transform: uppercase;
+	}
+	p {
+		color: $lightGrayishBlue;
+		font-family: "Barlow";
+		font-size: 18px;
+		line-height: 2rem;
+	}
+	.travelDistance {
+		display: flex;
+        gap: 4rem;
+
+		h3 {
+			font-family: "Barlow Condensed";
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 17px;
+			letter-spacing: 2.3625px;
+			text-transform: uppercase;
+            color: $lightGrayishBlue;
+		}
+		h4 {
+			font-family: "Bellefair";
+			font-style: normal;
+			font-weight: 400;
+			font-size: 28px;
+			line-height: 2rem;
+			text-transform: uppercase;
+            color: $white;
+		}
+	}
+}

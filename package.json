@@ -1,5 +1,5 @@
 {
-	"homepage": "",
+	"homepage": "https://M-Kgobe.github.io/space-tourism-web",
 	"name": "space-tourism-web",
 	"version": "0.1.0",
 	"private": true,
@@ -41,6 +41,7 @@
 		]
 	},
 	"devDependencies": {
+		"gh-pages": "^4.0.0",
 		"react-router-dom": "^6.4.1"
 	}
 }

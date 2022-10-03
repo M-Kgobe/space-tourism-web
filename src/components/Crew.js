@@ -11,6 +11,9 @@ function Crew() {
 				<div className={styles.crewDetails}>
 					
 				</div>
+				<div className={styles.member}>
+
+				</div>
 			</section>
 		</>
 	);
